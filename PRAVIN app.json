@@ -1,0 +1,12 @@
+from flask import Flask,render_template
+
+
+app = Flask(__PRAVIN__)
+
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+if __PRAVIN__ == '__main__':
+    app.run(debug=True)
